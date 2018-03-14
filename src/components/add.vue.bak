@@ -1,6 +1,6 @@
 <template>
     <div class="ticketDetail" :style="{ height: (tabPageHeight) + 'px' }">
-    <scroller class="scroller" >
+    <scroller class="scroller" :style="{ width: (tabPageWidth) + 'px'}">
       <wxc-cell :has-arrow="false"
                   :cell-style="cellStyle"
                   :has-top-border="false"
@@ -121,6 +121,7 @@
   }
 
   .input-title {
+    width: 750px;
     font-size: 35px;
     color: #333333;
   }
